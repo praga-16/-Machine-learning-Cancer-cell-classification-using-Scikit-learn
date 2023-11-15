@@ -106,16 +106,26 @@ print(accuracy_score(test_labels, predictions))
 ``` 
 ## Output:
 
-### Training log:
+### label names:
+![WhatsApp Image 2023-11-15 at 21 14 35 (3)](https://github.com/praga-16/-Machine-learning-Cancer-cell-classification-using-Scikit-learn/assets/95266924/d15c3db9-f1e2-4d00-b98d-0e239861b179)
 
-### Model evaluation metrics:
+### Labels:
+![WhatsApp Image 2023-11-15 at 21 14 35 (2)](https://github.com/praga-16/-Machine-learning-Cancer-cell-classification-using-Scikit-learn/assets/95266924/5f2dc05b-b826-46ef-9b9a-356101035728)
 
+### Feature names:
+![WhatsApp Image 2023-11-15 at 21 14 35 (1)](https://github.com/praga-16/-Machine-learning-Cancer-cell-classification-using-Scikit-learn/assets/95266924/7a000d24-786e-4370-b670-79ab76cd80a7)
 
-### Confusion matrix:
+### Features:
+![WhatsApp Image 2023-11-15 at 21 14 35](https://github.com/praga-16/-Machine-learning-Cancer-cell-classification-using-Scikit-learn/assets/95266924/f09bb376-1cae-489e-aaa3-5bb5d9d22ce1)
 
+### Features:
+![image](https://github.com/praga-16/-Machine-learning-Cancer-cell-classification-using-Scikit-learn/assets/95266924/b1031495-c445-4bdc-ad89-c32f52b8f1da)
 
-### Classification report:
+### Prediction:
+![image](https://github.com/praga-16/-Machine-learning-Cancer-cell-classification-using-Scikit-learn/assets/95266924/e64d7173-5a83-443d-98c7-03ef317b582a)
 
+### Accuracy:
+![WhatsApp Image 2023-11-15 at 21 14 35 (4)](https://github.com/praga-16/-Machine-learning-Cancer-cell-classification-using-Scikit-learn/assets/95266924/b1e99417-32f0-4ede-be37-7f36ba52a043)
 
 ## Result:
 
