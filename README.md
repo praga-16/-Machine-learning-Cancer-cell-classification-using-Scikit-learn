@@ -1,4 +1,7 @@
 # -Machine-learning-Cancer-cell-classification-using-Scikit-learn
+
+Machine Learning is a sub-field of Artificial Intelligence that gives systems the ability to learn themselves without being explicitly programmed to do so. Machine Learning can be used in solving many real world problems. 
+Let’s classify cancer cells based on their features, and identifying them if they are ‘malignant’ or ‘benign’. We will be using scikit-learn for a machine learning problem. Scikit-learn is an open-source machine learning, data mining and data analysis library for Python programming language.
 ## Features
 
 - CNN and transfer learning applied for pneumonia detection.
@@ -9,13 +12,9 @@
 ## Requirements
 
 - Python 3.x for project development.
-- Essential Python packages: tensorflow, keras, opencv-python, numpy for image processing.
-
-## Architecture Diagram
-
-
 
 ## Flow chart
+![image](https://github.com/praga-16/-Machine-learning-Cancer-cell-classification-using-Scikit-learn/assets/95266924/88cd72ea-9bda-4121-9495-745605b09f6a)
 
 
 
@@ -26,25 +25,26 @@
    ```shell
    git clone https://github.com/Paul-Andrew-15/Pneumonia-Detection-using-Convolutional-neural-network-and-Transfer-learning-Resnet50-.git
 
-2. Install the required packages:
-
-3. Download the pre-trained pneumonia detection model and label mappings.
+2. For this machine learning project, we will be needing the ‘Scikit-learn’ Python module. If you don’t have it installed on your machine, download and install it by running the following
+ pip install scikit-learn
+3. Use any IDE for this project, by it is highly recommended Jupyter notebook for the project.
+ pip install jupyter
 
 ## Usage
 
 1. Open a new Google Colab notebook.
 
-2. Upload the project files in Google Drive.
+2. Importing the necessary module and dataset.
 
-3. Load the pre-trained pneumonia detection model and label mappings. Ensure the model files are correctly placed in the Colab working directory.
+3. Loading the dataset to a variable. 
 
-4. Execute the Pneumonia Detection script in the Colab notebook, which may involve adapting the script to run within a notebook environment.
+4. Organizing the data and looking at it. 
 
-5. Follow the on-screen instructions or customize input cells in the notebook for pneumonia detection with uploaded medical images.
+5. Organizing the data into Sets.
 
-6. View and analyze the results directly within the Colab notebook.
+6. import the GaussianNB module and initialize it using the GaussianNB() function.
 
-7. Repeat the process for additional images or iterations as needed.
+7.Evaluating the trained model’s accuracy.
 
 ## Program:
 
@@ -103,7 +103,7 @@ print(accuracy_score(test_labels, predictions))
 
 
 
-```
+``` 
 ## Output:
 
 ### Training log:
