@@ -1,80 +1,128 @@
 # -Machine-learning-Cancer-cell-classification-using-Scikit-learn
-## AIM
+## Features
 
-To develop a deep neural network for Malaria infected cell recognition and to analyze the performance.
+- CNN and transfer learning applied for pneumonia detection.
+- Real-time processing of medical images for timely diagnostics.
+- Visual representation with overlays for enhanced interpretation.
+- User-friendly interface for easy interaction with the detection system.
+- Detailed diagnostic reports with probability scores and visual heatmaps.
+## Requirements
 
-## Problem Statement:
+- Python 3.x for project development.
+- Essential Python packages: tensorflow, keras, opencv-python, numpy for image processing.
 
-
-
-## Dataset:
-
-
-
-## Neural Network Model
-
-
+## Architecture Diagram
 
 
 
-## DESIGN STEPS
+## Flow chart
 
-### Step 1:
-We begin by importing the necessary Python libraries, including TensorFlow for deep learning, data preprocessing tools, and visualization libraries.
 
-### Step 2:
-To leverage the power of GPU acceleration, we configure TensorFlow to allow GPU processing, which can significantly speed up model training.
 
-### Step 3:
-We load the dataset, consisting of cell images, and check their dimensions. Understanding the image dimensions is crucial for setting up the neural network architecture.
+## Installation
 
-### Step 4:
-We create an image generator that performs data augmentation, including rotation, shifting, rescaling, and flipping. Data augmentation enhances the model's ability to generalize and recognize malaria-infected cells in various orientations and conditions.
+1. Clone the repository:
 
-### Step 5:
-We design a convolutional neural network (CNN) architecture consisting of convolutional layers, max-pooling layers, and fully connected layers. The model is compiled with appropriate loss and optimization functions.
+   ```shell
+   git clone https://github.com/Paul-Andrew-15/Pneumonia-Detection-using-Convolutional-neural-network-and-Transfer-learning-Resnet50-.git
 
-### Step 6:
-We split the dataset into training and testing sets, and then train the CNN model using the training data. The model learns to differentiate between parasitized and uninfected cells during this phase.
+2. Install the required packages:
 
-### Step 7:
-We visualize the training and validation loss to monitor the model's learning progress and detect potential overfitting or underfitting.
+3. Download the pre-trained pneumonia detection model and label mappings.
 
-### Step 8:
-We evaluate the trained model's performance using the testing data, generating a classification report and confusion matrix to assess accuracy and potential misclassifications.
+## Usage
 
-### Step 9:
-We demonstrate the model's practical use by randomly selecting and testing a new cell image for classification.
+1. Open a new Google Colab notebook.
 
-## PROGRAM
+2. Upload the project files in Google Drive.
+
+3. Load the pre-trained pneumonia detection model and label mappings. Ensure the model files are correctly placed in the Colab working directory.
+
+4. Execute the Pneumonia Detection script in the Colab notebook, which may involve adapting the script to run within a notebook environment.
+
+5. Follow the on-screen instructions or customize input cells in the notebook for pneumonia detection with uploaded medical images.
+
+6. View and analyze the results directly within the Colab notebook.
+
+7. Repeat the process for additional images or iterations as needed.
+
+## Program:
+
+```python
+# importing the Python module
+import sklearn
+
+# importing the dataset
+from sklearn.datasets import load_breast_cancer
+
+# loading the dataset
+data = load_breast_cancer()
+
+# Organize our data
+label_names = data['target_names']
+labels = data['target']
+feature_names = data['feature_names']
+features = data['data']
+
+# looking at the data
+print(label_names)
+
+print(labels)
+
+print(feature_names)
+
+print(features)
+
+# importing the function
+from sklearn.model_selection import train_test_split
+
+# splitting the data
+train, test, train_labels, test_labels = train_test_split(features, labels,
+									test_size = 0.33, random_state = 42)
+
+# importing the module of the machine learning model
+from sklearn.naive_bayes import GaussianNB
+
+# initializing the classifier
+gnb = GaussianNB()
+
+# training the classifier
+model = gnb.fit(train, train_labels)
+
+# making the predictions
+predictions = gnb.predict(test)
+
+# printing the predictions
+print(predictions)
+
+# importing the accuracy measuring function
+from sklearn.metrics import accuracy_score
+
+# evaluating the accuracy
+print(accuracy_score(test_labels, predictions))
+
+
 
 ```
-Developed By: Pragatheesvaran AB
-Register No: 212221240039
-```
+## Output:
+
+### Training log:
+
+### Model evaluation metrics:
 
 
-## OUTPUT
-
-### Training Loss, Validation Loss Vs Iteration Plot
+### Confusion matrix:
 
 
+### Classification report:
 
 
+## Result:
 
-### Classification Report
+The pneumonia detection model, utilizing CNN and transfer learning with ResNet50, demonstrates strong performance on both training and testing datasets:
 
+- The model achieved an accuracy of 89.26% on the test dataset, showcasing its ability to correctly classify pneumonia cases.
+- During training, the model reached a high accuracy of 96.05% on the training dataset, indicating effective learning and generalization.
+- Precision, measuring the model's ability to correctly identify positive cases, is notably high at 96.79%.
 
-
-
-
-### Confusion Matrix
-
-
-### New Sample Data Prediction
-
-
-
-
-## RESULT
-The model's performance is evaluated through training and testing, and it shows potential for assisting healthcare professionals in diagnosing malaria more efficiently and accurately.
+These results suggest that the pneumonia detection model is both accurate and well-balanced, with high precision and recall values. Further analysis, including the examination of the confusion matrix and visualizations provide additional insights into the model's performance.
