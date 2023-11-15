@@ -130,7 +130,7 @@ print(accuracy_score(test_labels, predictions))
 ## Result:
 The ML | Cancer cell classification using Scikit-learn,demonstrates strong performance on both training and testing datasets:
 
-- The model achieved an accuracy of 96.15% on the test dataset, showcasing its ability to correctly classify pneumonia cases.
+- The model achieved an accuracy of 96.15% on the test dataset, showcasing its ability to correctly classify cases.
 - This machine learning classifier based on the Naive Bayes algorithm is 94.15% accurate in predicting whether a tumor is malignant or benign.
 
 These results suggest that the cancer cell model is both accurate and well-balanced, with high precision and recall values.
