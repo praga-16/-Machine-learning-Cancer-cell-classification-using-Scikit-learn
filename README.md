@@ -4,11 +4,11 @@ Machine Learning is a sub-field of Artificial Intelligence that gives systems th
 Let’s classify cancer cells based on their features, and identifying them if they are ‘malignant’ or ‘benign’. We will be using scikit-learn for a machine learning problem. Scikit-learn is an open-source machine learning, data mining and data analysis library for Python programming language.
 ## Features
 
-- CNN and transfer learning applied for pneumonia detection.
-- Real-time processing of medical images for timely diagnostics.
-- Visual representation with overlays for enhanced interpretation.
+- Machine learning models can analyze large datasets and identify patterns that may not be apparent to human observers. This enables early detection of cancer cells, potentially leading to more successful treatment outcomes.
+- Automated classification using machine learning algorithms can process and analyze large volumes of medical data much faster than manual methods. This efficiency is crucial for timely decision-making in a clinical setting.
+- Machine learning models can be continuously trained and updated as more data becomes available. This adaptability allows the model to improve over time, staying relevant as new information and technologies emerge.
 - User-friendly interface for easy interaction with the detection system.
-- Detailed diagnostic reports with probability scores and visual heatmaps.
+- The analysis of large datasets using machine learning can reveal novel insights into cancer biology and behavior. This can drive further research and contribute to a deeper understanding of the disease
 ## Requirements
 
 - Python 3.x for project development.
@@ -23,7 +23,7 @@ Let’s classify cancer cells based on their features, and identifying them if t
 1. Clone the repository:
 
    ```shell
-   git clone https://github.com/Paul-Andrew-15/Pneumonia-Detection-using-Convolutional-neural-network-and-Transfer-learning-Resnet50-.git
+   git clone https://github.com/praga-16/-Machine-learning-Cancer-cell-classification-using-Scikit-learn.git
 
 2. For this machine learning project, we will be needing the ‘Scikit-learn’ Python module. If you don’t have it installed on your machine, download and install it by running the following
  pip install scikit-learn
@@ -128,11 +128,9 @@ print(accuracy_score(test_labels, predictions))
 ![WhatsApp Image 2023-11-15 at 21 14 35 (4)](https://github.com/praga-16/-Machine-learning-Cancer-cell-classification-using-Scikit-learn/assets/95266924/b1e99417-32f0-4ede-be37-7f36ba52a043)
 
 ## Result:
+The ML | Cancer cell classification using Scikit-learn,demonstrates strong performance on both training and testing datasets:
 
-The pneumonia detection model, utilizing CNN and transfer learning with ResNet50, demonstrates strong performance on both training and testing datasets:
+- The model achieved an accuracy of 96.15% on the test dataset, showcasing its ability to correctly classify pneumonia cases.
+- This machine learning classifier based on the Naive Bayes algorithm is 94.15% accurate in predicting whether a tumor is malignant or benign.
 
-- The model achieved an accuracy of 89.26% on the test dataset, showcasing its ability to correctly classify pneumonia cases.
-- During training, the model reached a high accuracy of 96.05% on the training dataset, indicating effective learning and generalization.
-- Precision, measuring the model's ability to correctly identify positive cases, is notably high at 96.79%.
-
-These results suggest that the pneumonia detection model is both accurate and well-balanced, with high precision and recall values. Further analysis, including the examination of the confusion matrix and visualizations provide additional insights into the model's performance.
+These results suggest that the cancer cell model is both accurate and well-balanced, with high precision and recall values.
