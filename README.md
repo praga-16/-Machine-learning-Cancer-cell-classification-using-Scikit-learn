@@ -127,6 +127,12 @@ print(accuracy_score(test_labels, predictions))
 ### Accuracy:
 ![WhatsApp Image 2023-11-15 at 21 14 35 (4)](https://github.com/praga-16/-Machine-learning-Cancer-cell-classification-using-Scikit-learn/assets/95266924/b1e99417-32f0-4ede-be37-7f36ba52a043)
 
+### Plot - 1:
+<img width="416" alt="8" src="https://github.com/praga-16/-Machine-learning-Cancer-cell-classification-using-Scikit-learn/assets/104237399/188739e6-629a-487d-9224-ec163f2ec0c4">
+
+### Plot - 2:
+<img width="424" alt="9" src="https://github.com/praga-16/-Machine-learning-Cancer-cell-classification-using-Scikit-learn/assets/104237399/5fdb2e98-081f-45d2-814b-d54f60d1ac4b">
+
 ## Result:
 The ML | Cancer cell classification using Scikit-learn,demonstrates strong performance on both training and testing datasets:
 
