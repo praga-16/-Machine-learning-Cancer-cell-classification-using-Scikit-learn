@@ -1,4 +1,4 @@
-# -Machine-learning-Cancer-cell-classification-using-Scikit-learn
+# CANCER CELL DETECTION USING MACHINE LEARNING
 
 Machine Learning is a sub-field of Artificial Intelligence that gives systems the ability to learn themselves without being explicitly programmed to do so. Machine Learning can be used in solving many real world problems. 
 Let’s classify cancer cells based on their features, and identifying them if they are ‘malignant’ or ‘benign’. We will be using scikit-learn for a machine learning problem. Scikit-learn is an open-source machine learning, data mining and data analysis library for Python programming language.
